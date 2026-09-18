@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Verses In Time</title>
+<meta name="description" content="One word from a verse, and the history inside it. Short studies in the original languages of the Bible.">
+<style>
+:root{
+  --bg:#fbfaf8; --card:#fff; --ink:#15202b; --muted:#5d6b7a;
+  --line:#e6e1d9; --accent:#6b4f2a; --accent-ink:#fff;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#14181d; --card:#1c2228; --ink:#e9edf1; --muted:#9aa7b4;
+         --line:#2b333b; --accent:#d8b071; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+  "Helvetica Neue",Arial,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.15rem}
+/* On a phone the single column IS the page. On a laptop a 46rem column
+   leaves most of the window empty, so widen the measure and run the
+   categories two-up. Each section is one grid item, so a category never
+   splits across columns mid-list. */
+/* COLUMNS, NOT GRID. A 2-col grid aligns rows to the tallest section,
+   so a short category (Roofing, 3 items) leaves a hole beneath it
+   until the next row starts. Multi-column packs sections continuously;
+   break-inside keeps a category from splitting across the fold. */
+@media (min-width:56rem){
+  .wrap{max-width:62rem}
+  .cols{column-count:2;column-gap:1.7rem}
+  .cols section{break-inside:avoid;-webkit-column-break-inside:avoid;
+    display:block}
+}
+header{padding:2.6rem 0 1.4rem}
+h1{margin:0 0 .35rem;font-size:1.75rem;letter-spacing:-.015em}
+.tag{margin:0;color:var(--muted);font-size:1.02rem}
+.intro{margin:1.5rem 0 0;padding:1rem 1.1rem;background:var(--card);
+  border:1px solid var(--line);border-radius:12px}
+.intro p{margin:0;font-size:.97rem}
+/* Spacing lives on the SECTION, not on a heading margin. A heading
+   margin-top is collapsed away at the top of a new column, so the two
+   columns started ~20px out of alignment with each other. */
+.cols{margin-top:2.2rem}
+.cols section{margin-bottom:2rem}
+h2{margin:0 0 .7rem;font-size:.82rem;text-transform:uppercase;
+  letter-spacing:.09em;color:var(--muted);font-weight:700}
+ul{list-style:none;margin:0;padding:0;border:1px solid var(--line);
+  border-radius:12px;overflow:hidden;background:var(--card)}
+li+li{border-top:1px solid var(--line)}
+/* BLOCK FLOW, NOT FLEX. Some cost cards carry words as well as figures
+   ("$3,200 furnace → $7,800 quote"). Side by side, that item cannot
+   compress, so it widened the whole document and clipped EVERY element
+   off the right edge - not just its own row. Two flex attempts failed
+   the same way, because a flex title shrinks rather than wrapping.
+   Stacked block children cannot overflow at any viewport, and on a
+   phone - which is where all of this traffic arrives - the figure
+   reads better as a label above the question anyway. */
+a.ep{display:block;padding:.8rem 1rem;text-decoration:none;color:inherit}
+a.ep:hover,a.ep:focus{background:color-mix(in srgb,var(--accent) 8%,
+  transparent);outline:none}
+.fig{display:block;font-variant-numeric:tabular-nums;font-weight:700;
+  font-size:.79rem;letter-spacing:.02em;color:var(--accent);
+  margin-bottom:.1rem;overflow-wrap:anywhere}
+.ttl{display:block;font-size:.97rem;overflow-wrap:anywhere}
+footer{margin:3rem 0 2.5rem;padding-top:1.4rem;
+  border-top:1px solid var(--line);color:var(--muted);font-size:.87rem}
+footer a{color:var(--accent)}
+.note{margin:.9rem 0 0;font-size:.82rem;line-height:1.55}
+@media (max-width:26rem){ .fig{font-size:.8rem} }
+</style></head><body><div class="wrap">
+<header><h1>Verses In Time</h1>
+<p class="tag">One word, and the history inside it.</p>
+</header>
+<div class="intro"><p>Each video takes a single word from a verse — shalom, hesed, logos — and follows it back to what it meant to the people who first wrote it down. Scripture is quoted from the public-domain World English Bible.</p></div>
+<div class="cols">
+<section><ul>
+<li><a class="ep" href="https://www.youtube.com/shorts/6m8bvTzUiAI" rel="noopener"><span class="ttl">John 1:1 - The Word &#x27;Logos&#x27;: A Historical Look</span></a></li>
+<li><a class="ep" href="https://www.youtube.com/shorts/gwcPCV1bmjQ" rel="noopener"><span class="ttl">Matthew 6:14 – The Missing Line of the Lord’s Prayer</span></a></li>
+<li><a class="ep" href="https://www.youtube.com/shorts/N2AAPSUaYQg" rel="noopener"><span class="ttl">Numbers 6:26 - Exploring the Rich History of Shalom</span></a></li>
+<li><a class="ep" href="https://www.youtube.com/shorts/v5QEBjgvstE" rel="noopener"><span class="ttl">The Historical Context of 1 Corinthians 13:13 and the Word Agape</span></a></li>
+<li><a class="ep" href="https://www.youtube.com/shorts/sgykKlwYnis" rel="noopener"><span class="ttl">Shadow of Death: The Hidden Weapon in a Shepherd&#x27;s Belt</span></a></li>
+<li><a class="ep" href="https://www.youtube.com/watch?v=0lj4j55BG8E" rel="noopener"><span class="ttl">&quot;In the Beginning Was the Word&quot; - 6 Bible Verses and the History Inside Them</span></a></li>
+<li><a class="ep" href="https://www.youtube.com/shorts/-QgSeGREZLM" rel="noopener"><span class="ttl">Lamentations 3:22 - The History and Meaning of Hesed</span></a></li>
+</ul></section>
+</div>
+<footer>
+<p><a href="https://www.youtube.com/@versesintime">YouTube</a> · <a href="https://www.tiktok.com/@versesintime">TikTok</a></p>
+<p class="note">Scripture quoted from the public-domain World English Bible. Historical and linguistic claims follow published scholarship; where scholars disagree the video says so. Imagery is AI-generated and illustrative - it does not depict any real place, object or person.</p>
+<p class="note">Narration and imagery in these videos are AI-generated.</p>
+<p class="note">Updated 18 September 2026.</p>
+</footer></div>
+</body></html>
